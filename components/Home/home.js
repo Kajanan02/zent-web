@@ -4,6 +4,7 @@ import MetaData from "../MetaData";
 import Header from "./header";
 import Navbar from "./navbar";
 import Feature from "./feature";
+import WhatYouGet from "./WhatYouGet";
 
 
 
@@ -57,6 +58,7 @@ function Home(props) {
             <Header />
             <Navbar/>
             <Feature/>
+            <WhatYouGet/>
             {/*<Header />*/}
         </>
     );

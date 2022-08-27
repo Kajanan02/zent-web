@@ -97,3 +97,20 @@
 .color-gray{
     color: #5B5B5B;
 }
+
+.get-card{
+    margin-top: 40px;
+    width: 305px;
+    /*height: 326px;*/
+    box-shadow: 2px 2px 4px rgba(129, 127, 127, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-heading{
+    ont-weight: 400;
+    font-size: 20px;
+}
+.icon-position{
+    left: 18px;
+    top: -20px;
+}
