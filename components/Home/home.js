@@ -5,6 +5,7 @@ import Header from "./header";
 import Navbar from "./navbar";
 import Feature from "./feature";
 import WhatYouGet from "./WhatYouGet";
+import FeaturesContent from "./features-content";
 
 
 
@@ -59,6 +60,7 @@ function Home(props) {
             <Navbar/>
             <Feature/>
             <WhatYouGet/>
+            <FeaturesContent/>
             {/*<Header />*/}
         </>
     );

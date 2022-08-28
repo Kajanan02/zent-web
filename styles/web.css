@@ -114,3 +114,28 @@
     left: 18px;
     top: -20px;
 }
+.round-box{
+    width: 100px;
+    height: 100px;
+    background: #2B9A9F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.features-content-heading{
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 16px;
+}
+.f-16{
+    font-size: 16px;
+}
+.features-content-box{
+    text-align: center;
+    width: 320px;
+    margin-top: 74px;
+}
+
