@@ -66,9 +66,13 @@
     color: #000000 !important;
 }
 .navbar-container{
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*width: 100%;*/
+    /*display: block;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: opacity 0.2s ease-in-out;
+    /*transition: 0.5s;*/
 }
 .features-container{
     padding: 76px 0;
@@ -138,4 +142,104 @@
     width: 320px;
     margin-top: 74px;
 }
+.testimonial-card{
+
+    width: 305px;
+    /*height: 383px;*/
+    background: #FFFFFF;
+    box-shadow: 2px 2px 4px rgba(129, 127, 127, 0.25);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto;
+
+}
+.camma{
+    font-family: 'Port Lligat Sans', serif;
+    background-color: #2B9A9F;
+    border-radius: 100%;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 86px;
+    width: 177px;
+    /*height: 190px;*/
+    position: absolute;
+    top: -69px;
+    left: -70px;
+    padding-top: 93px;
+    padding-right: 43px;
+    text-align: right;
+color: white;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.client-name{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.slide-container{
+    margin-top: 86px;
+}
+.react-slideshow-container .default-nav:last-of-type,.react-slideshow-container .default-nav:hover, .react-slideshow-container .default-nav:focus{
+    width: 46px;
+    height: 46px;
+    right: -105px !important;
+    background: rgba(43, 154, 159, 0.6);
+    border-radius: 60px;
+}
+.react-slideshow-container .default-nav:first-of-type{
+    width: 46px;
+    height: 46px;
+    left: -113px !important;
+    background: rgba(43, 154, 159, 0.6);
+    border-radius: 60px;
+}
+.react-slideshow-container .default-nav:hover, .react-slideshow-container .default-nav:focus{
+    background: rgba(43, 154, 159, 0.6) !important;
+}
+.react-slideshow-container+ul.indicators li{
+    margin: 0 10px !important;
+}
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:before{
+    background: #2B9A9F !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+.story-image-container{
+    border-radius: 16px;
+    overflow: hidden;
+}
+.img-story-01{
+    height: 532px;
+}
+.img-story-02{
+    height: 300px;
+}
+.stayUpdate-container{
+    margin: 42px 0 100px;
+}
+.email-input{
+    margin-top: 56PX;
+    padding-left: 86px !important;
+    color: #5B5B5B !important;
+    height: 92px;
+    background: #EBEBEB !important;
+    border-radius: 50px 0px 0px 50px !important;
+}
+.btn-submit{
+    margin-top: 56px;
+    height: 92px;
+    border-radius: 0px 50px 50px 0px !important;
+    background: #2B9A9F !important;
+    width: 100%;
+    color: #FFFFFF !important;
+    font-size: 20px !important;
+    /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
+}
+
+
+
 

@@ -1,22 +1,32 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 
 export default function Navbar(props) {
 
+    const [show,setShow]=useState(false);
 
-    function getWindowDimensions() {
-        const { innerWidth: width, innerHeight: height } = window;
-        return {
-            width,
-            height
-        };
+    const controlNavbar = ()=>{
+        console.log(window.screenY)
+        if(window.scrollY>window.innerHeight){
+            setShow(true)
+        }else {
+            setShow(false)
+        }
     }
 
-    // console.log(window.innerHeight)
+    useEffect(()=>{
+
+        window.addEventListener('scroll',controlNavbar)
+
+        return()=>{
+            window.removeEventListener('scroll',controlNavbar)
+        }
+
+    },[])
 
 
     return (
-        <div className={"navbar-container"} id={"nav-visible"}>
+        <div className={`navbar-container  ${show ?  `visible opacity-100` : `opacity-0 invisible`}`} id={"nav-visible"}>
             {/*<nav className="navbar navbar-light bg-light">*/}
             {/*    <div className="container">*/}
 
