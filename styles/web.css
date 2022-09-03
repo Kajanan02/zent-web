@@ -237,8 +237,17 @@ color: white;
     width: 100%;
     color: #FFFFFF !important;
     font-size: 20px !important;
-    /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
 }
+.footer{
+    background-color: #2b9a9f;
+    padding-top: 62px;
+}
+.footer-heading{
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 12px;
+}
+
 
 
 

@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react';
-import Script from "next/script";
+import React from 'react';
 import MetaData from "../MetaData";
 import Header from "./header";
 import Navbar from "./navbar";
@@ -9,7 +8,7 @@ import FeaturesContent from "./features-content";
 import OurStory from "./our-story";
 import ClientThoughts from "./client-thoughts";
 import StayUpDate from "./stayUpDate";
-
+import Footer from "./footer";
 
 
 function Home(props) {
@@ -54,6 +53,7 @@ function Home(props) {
             <ClientThoughts/>
             <OurStory/>
 <StayUpDate/>
+                <Footer/>
             {/*<Header />*/}
         </>
     );
