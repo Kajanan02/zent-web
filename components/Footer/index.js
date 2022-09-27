@@ -1,54 +1,51 @@
-import React from "react";
-// import NewsletterGlobal from "../newsletter-global";
-import Link from "next/link";
+import React from 'react';
+import Image from "next/image";
 
-export default function Footer() {
+export default function Footer(props) {
     return (
-        <footer className="container">
-            <div className="container">
-                <div className="col">
-                    <h4 className="footer-heads">{`Company`}</h4>
-                    <Link href={`/about`}>{`About Us`}</Link>
-                    <Link href={`/careers`}>{`Careers`}</Link>
+        <div className={"footer"}>
+            <div className={"container"}>
+                <Image src={"/images/logo-wh.svg"} height={'64px'} width={'200px'}/>
+                <div className={"row"}>
+                    <div className={"col-md-6"}>
+                        <div className={"footer-heading"}>We are Always Innovating</div>
+                        <div className={"f-16 text-white mt-2"}>We’re always improving Zent.App, adding features and
+                            capabilities
+                            that other platforms haven’t even thought of yet!
+                        </div>
+                        <div className={"footer-heading"}>Keep in touch</div>
+                        <div className={"d-flex gap-2 mt-3"}>
+                            <Image src={"/images/icons/facebook.svg"} height={"45px"} width={"45px"}/>
+                            <Image src={"/images/icons/twitter.svg"} height={"45px"} width={"45px"}/>
+                            <Image src={"/images/icons/insta.svg"} height={"45px"} width={"45px"}/>
+                            <Image src={"/images/icons/linkedin.svg"} height={"45px"} width={"45px"}/>
+                        </div>
+                    </div>
+                    <div className={"col-md-3"}>    
+                        <div className={"ms-md-5"}>
+                            <div className={"footer-heading mb-3"}>Company</div>
+                            <div className={"text-white f-16"}>About us</div>
+                            <div className={"text-white f-16"}>Contact us</div>
+                            <div className={"text-white f-16"}>Privcay policy</div>
+                            <div className={"text-white f-16"}>Terms & contions</div>
+                        </div>
+                    </div>
+                    <div className={"col-md-3"}>
+                        <div className={"footer-col"}>
+                            <div className={"footer-heading mb-3"}>Reach us</div>
+                            <div className={"text-white f-16"}>www. zent.app</div>
+                            <div className={"text-white f-16"}>077-0101101</div>
+                            <div className={"text-white f-16"}>career@ zent.app</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="col">
-                    <h4>{`Resources`}</h4>
-                    <Link href={`/blogs`}>{`Blogs`}</Link>
-                    <Link href={`/news`}>{`News`}</Link>
-                    <Link href={`/case-studies`}>{`Case Studies`}</Link>
-                </div>
-
-                <div className="col">
-                    <h4>{`Our Solution`}</h4>
-                    <Link href={`/solutions/solution-1`}>{`Precision Agriculture`}</Link>
-                    <Link href={`/solutions/solution-2`}>{`Farmer Management System`}</Link>
-                    <Link href={`/solutions/solution-3`}>{`Farm Operations Management Farm`}</Link>
-                    <Link href={`/solutions/solution-4`}>{`Financial Management`}</Link>
-                </div>
-
-                <div className="col">
-                    <h4>{`Partnership`}</h4>
-                    <Link href={`/agronomist-portal`}>{`Agronomist Portal`}</Link>
-                    <Link href={`/research-collaboration`}>{`Research Collaboration`}</Link>
+                <hr className={"text-white mt-5"}/>
+                <div className={"text-center text-white f-16 py-4"}>All Rights Reserved Zent.App | Designed By : LIZRIS
+                    2022
                 </div>
             </div>
-            <div >
-                <div className="footer-bar">
-               <img src={"/senz-agro-logo.svg"} alt={"SenzAgro Logo"} className={"remove-white-img"}/>
-                <span>{`© Copyrights 2022 SenzMate Pvt Ltd.`}</span>
-                <span>{`By visiting the site, you’re agreeing with the`}
-                    <Link href={`/terms-of-use`} passHref ><span className={'footer-terms'}>{` Terms of Service `}</span></Link> {`and`}
-                    <Link href={`/privacy-policy`} passHref ><span className={'footer-terms'}>{` Privacy Policy.`}</span></Link>
-                </span>
-                </div>
-            <span className="social-icons">
-                        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/SenzMate"><img src={'/images/Social-media/facebook.svg'} className={"social-icon-style"} alt="Facebook"/> </a>
-                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/senzmate-iot-solutions/"><img src={'/images/Social-media/linkedin.svg'} className={"social-icon-style"} alt="LinkedIn"/> </a>
-                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/senzmate/"><img src={'/images/Social-media/instagram.svg'} className={"social-icon-style"} alt="Instagram"/> </a>
-                        <a target="_blank" rel="noreferrer" href="https://twitter.com/SenzMate"><img src={'/images/Social-media/twitter.svg'} className={"social-icon-style"} alt="Twitter"/> </a>
-                    </span>
-            </div>
-        </footer>
+        </div>
     );
 }
+
