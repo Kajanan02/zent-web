@@ -8,10 +8,10 @@ export default function Footer(props) {
                 <Image src={"/images/logo-wh.svg"} height={'64px'} width={'200px'}/>
                 <div className={"row"}>
                     <div className={"col-md-6"}>
-                        <div className={"footer-heading"}>We are Always Innovating</div>
-                        <div className={"f-16 text-white mt-2"}>We’re always improving Zent.App, adding features and
+                        <div className={"footer-heading"}>{`We are Always Innovating`}</div>
+                        <div className={"f-16 text-white mt-2"}>{`We’re always improving Zent.App, adding features and
                             capabilities
-                            that other platforms haven’t even thought of yet!
+                            that other platforms haven’t even thought of yet!`}
                         </div>
                         <div className={"footer-heading"}>Keep in touch</div>
                         <div className={"d-flex gap-2 mt-3"}>
