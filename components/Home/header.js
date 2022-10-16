@@ -6,10 +6,10 @@ export default function Header() {
     return (
 
         <div className={"d-flex vh-100"}>
-            <div className={"flex-50"}>
+            <div className={"flex-50 position-relative"}>
                 <div className={"header-container"}>
                     <Image src={logo} width={'47px'} height={'47px'}/>
-                    <div className={"header-sub-container"}>
+                    <div className={"header-sub-container vertical-center"}>
                         <h1 className={"header-heading"}>The Ultimate <br/>
                             Class Management<br/>
                             Platform</h1>
